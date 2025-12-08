@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.1](https://www.github.com/fortify/fortify-ssc-parser-sarif/compare/v1.7.0...v1.7.1) (2025-12-08)
+
+
+### Bug Fixes
+
+* Handle malformed URIs ([1c891f7](https://www.github.com/fortify/fortify-ssc-parser-sarif/commit/1c891f7f6c8cbf1dff298e69a33a35e51d5a36fd))
+
 ## [1.7.0](https://www.github.com/fortify/fortify-ssc-parser-sarif/compare/v1.6.1...v1.7.0) (2025-05-27)
 
 
