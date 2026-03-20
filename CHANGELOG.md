@@ -1,5 +1,53 @@
 # Changelog
 
+## [1.2.1](https://github.com/SangameshV/fortify-ssc-parser-sarif/compare/v1.7.1...v1.2.1) (2026-03-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* handle SARIF kind
+
+### Features
+
+* display help if available ([ff2cdda](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/ff2cdda38eb307d45641dc695c4d9e3e0cc94a21))
+* display help if available ([c1d42f6](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/c1d42f6913b6a5927ea668ccb193feeba683fe17))
+* display help uri if available ([19fb073](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/19fb073abe0cc9c607a617da617e21455859b8f8))
+* Display line number if available ([2a27588](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/2a27588edc2fe8847f5e3df1c83e52a08646009c))
+* Display SARIF tags ([#31](https://github.com/SangameshV/fortify-ssc-parser-sarif/issues/31)) ([f57f3ac](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/f57f3ac7a996b98a108fdfd27dc7f56f53a3cde4))
+* Display snippet if available ([2a27588](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/2a27588edc2fe8847f5e3df1c83e52a08646009c))
+* handle SARIF kind ([d052119](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/d05211948a66c0fe070abd151ee4935d2597a6ff))
+* if rule.name contains spaces, don't treat as camel case ([8ee357a](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/8ee357a58a75c342ac951d5099804b57b263358a))
+* if rule.name contains spaces, don't treat as camel case ([3a4b198](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/3a4b198e92a2927fdc72baab7e4afd348ba2dfac))
+* No functional changes ([5bdbb4d](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/5bdbb4d19a33e9cb76e4b2d219bb391606c84c57))
+* Releases are now automatically published to GitHub Releases page ([5bdbb4d](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/5bdbb4d19a33e9cb76e4b2d219bb391606c84c57))
+* Update build & release process ([5bdbb4d](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/5bdbb4d19a33e9cb76e4b2d219bb391606c84c57))
+* Update dependencies ([5bdbb4d](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/5bdbb4d19a33e9cb76e4b2d219bb391606c84c57))
+* use location.message if available as the file name ([029b680](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/029b680d0ede805195c75423596fef66c4aead2d))
+* Use location.message if available as the file name; use shortDescription if available as the category ([5af746a](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/5af746ae8dd179f792d85077c0ac688e9e1fbb21))
+* Use security-severity property if available to determine priority ([0c526ba](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/0c526badf8f8c9289518a50f6a942fab3b81ce2a))
+* use security-severity property to determine priority ([ff10a65](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/ff10a65d4812d470bde2b28e204990b535355584))
+* use shortDescription if available as category ([a78bc35](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/a78bc353022334bfbd3728e1f9484761b61476c0))
+
+
+### Bug Fixes
+
+* Add missing changelog entry in previous release ([15449c6](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/15449c69818193278263d15e8654d0112b346cd3))
+* Allow SARIF to be imported on SSC 22.1+ ([1e84ae3](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/1e84ae3545a76e8fa1fdd1f460511cfabd873a97))
+* Compatibility update for Java 17 / SSC 23.2 ([c4ec141](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/c4ec1417be505e9705677921efe1422ae82abe55))
+* correct test data file names ([8ddad40](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/8ddad40e148f7f4ecbb0009880d0c14c88ba1581))
+* correct test data file names ([4c6de5d](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/4c6de5d0c7ac9496a5a4be1244c6ab0e0c5b0091))
+* Correct test data file names ([d052119](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/d05211948a66c0fe070abd151ee4935d2597a6ff))
+* Gracefully handle non-existing rule & artifact indexes ([ea84b5a](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/ea84b5a80d0652672e39643a11f3664521011578))
+* Handle malformed URIs ([1c891f7](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/1c891f7f6c8cbf1dff298e69a33a35e51d5a36fd))
+* Improve upload instructions in README.md ([1fd84b9](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/1fd84b93cf7e585b862d9458de10327a680a0516))
+* Update (potentially vulnerable) dependency versions ([3bb57d7](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/3bb57d731bfd18957f3d15adf742cf8a976042c6))
+* Use proper fortify-ssc-parser-util and transitive dependencies" ([2ef9d9b](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/2ef9d9bb3eaeb171b0e8d5bdbe07a70cc9e8af0e))
+
+
+### Miscellaneous Chores
+
+* release 1.2.1 ([16f21ab](https://github.com/SangameshV/fortify-ssc-parser-sarif/commit/16f21ab8092a968ac23d9bad2b5a662a00747c24))
+
 ### [1.7.1](https://www.github.com/fortify/fortify-ssc-parser-sarif/compare/v1.7.0...v1.7.1) (2025-12-08)
 
 
