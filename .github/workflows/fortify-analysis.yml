@@ -1,4 +1,4 @@
-name: Fortify Analysis
+name: Fortify on Demand Scan
 
 on:
   workflow_dispatch:
@@ -7,7 +7,14 @@ on:
   schedule:
     - cron: '16 0 * * 5'
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
-  fortify:
+  FoD-Scan:
     uses: fortify/.github/.github/workflows/fortify-analysis.yml@main
+    with:
+      java-version: '17'
     secrets: inherit
